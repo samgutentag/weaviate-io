@@ -6,12 +6,13 @@
 .blog-post-page, .docs-doc-page, .podcast-page {
   // Set Fonts for Blogs and Docs - content
   // #docusaurus_skipToContent_fallback – is for the page content, which excludes the navbar
-  // #docusaurus_skipToContent_fallback {
-  //   font-family: var(--site-font-base-family);
-  //   h1, h2, h3, h4, h5, h6 {
-  //     font-family: var(--site-font-heading-family);
-  //   }
-  // }
+  #docusaurus_skipToContent_fallback {
+    font-family: var(--site-font-base-family);
+    h1, h2, h3, h4, h5, h6 {
+      font-family: -apple-system,BlinkMacSystemFont,Inter,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI emoji";
+      font-weight: 600;
+    }
+  }
 
   pre code {
     max-height: 700px;
@@ -41,4 +42,12 @@
     border-width: 1px;
     border-bottom-color: var(--ifm-toc-border-color);
   }
+}
+
+#docusaurus_skipToContent_fallback p {
+  color: var(--docs-base-color);
+}
+
+#docusaurus_skipToContent_fallback li {
+  color: var(--docs-base-color);
 }
